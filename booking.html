@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Booking Task</title>
+  <link rel="stylesheet" href="booking.css">
+
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="top">
+      <div class="avil">
+        <div class="seatupper">
+          <div class="up"></div>
+          <div class="down"></div>
+        </div>
+        <h3>Available</h3>
+      </div>
+      <div class="sele">
+        <div class="seatupper selected">
+          <div class="up"></div>
+          <div class="down"></div>
+        </div>
+        <h3>Selected</h3>
+      </div>
+      <div class="occ">
+        <div class="seatupper preoccupied">
+          <div class="up"></div>
+          <div class="down"></div>
+        </div>
+        <h3>Occupied</h3>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="screen">SCREEN</div>
+      <div class="inner">
+        <div class="left">
+          <div class="seat" onclick="selectseat(this)" id="seat1">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat" onclick="selectseat(this)" id="seat2">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat" onclick="selectseat(this)" id="seat3">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat" onclick="selectseat(this)" id="seat4">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat" onclick="selectseat(this)" id="seat5">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat " onclick="selectseat(this)" id="seat6">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat preoccupied" onclick="selectseat(this)" id="seat7">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat preoccupied" onclick="selectseat(this)">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat preoccupied" onclick="selectseat(this)">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat" onclick="selectseat(this)">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat" onclick="selectseat(this)">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat" onclick="selectseat(this)">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat" onclick="selectseat(this)">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat" onclick="selectseat(this)">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+          <div class="seat" onclick="selectseat(this)">
+            <div class="up"></div>
+            <div class="down"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-right">
+    <h3>Select Your Movie</h3>
+    <select id="movieselector" onchange="changemovie()">
+      <option>Batman</option>
+      <option>Spiderman</option>
+      <option>Superman</option>
+    </select>
+    <div class="m-name">
+      <h5>Movie Name</h5>
+      <h4 id="moviename">Batman</h4>
+    </div>
+    <div class="m-price">
+      <h5>Movie Price</h5>
+      <h4 id="movieprice">$50</h4>
+    </div>
+    <div class="m-date">
+      <h5>Date</h5>
+      <h4>22 June 2025</h4>
+    </div>
+    <hr>
+    <div class="seat-sel">
+      <h4>Selected Seats</h4>
+      <div id="showselectedseats"></div>
+    </div>
+    <div class="seat-sel">
+      <h4>Amount to be paid </h4>
+      <div id="amount"></div>
+    </div>
+    <button onclick="bill()" class="btn">Pay Bill</button>
+  </div>
+
+<script src="booking.js" ></script>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+    }
+
+    .main {
+        height: 100vh;
+        width: 100%;
+        background: wheat;
+    }
+
+    .top {
+        width: 100%;
+        height: 80px;
+        background: gainsboro;
+        display: flex;
+        padding-left: 100px;
+        padding-top: 35px;
+        gap: 50px;
+
+    }
+
+    .up {
+        height: 25px;
+        width: 20px;
+        border: solid black 1px;
+        background: white;
+        position: absolute;
+        margin-top: -3px;
+        margin-left: 5px;
+        z-index: 1;
+        border-radius: 3px;
+    }
+
+    .down {
+        height: 30px;
+        width: 30px;
+        border: solid black 1px;
+        background: white;
+        position: relative;
+        border-radius: 3px;
+    }
+
+    .avil {
+        display: flex;
+        gap: 10px;
+    }
+
+    .sele {
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .sele.seat.up {
+        background-color: greenyellow;
+    }
+
+    .sele.seatupper.up {
+        background-color: greenyellow;
+    }
+
+    .occ {
+        display: flex;
+        gap: 10px;
+    }
+
+    .bottom {
+        height: 476px;
+        width: 979px;
+        background: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+
+    }
+
+    .inner {
+        width: 979px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .screen {
+        width: 400px;
+        height: 20px;
+        color: white;
+        background: gray;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        text-align: center;
+
+    }
+
+    .left {
+
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        width: 70%;
+        height: 300px;
+        justify-content: space-evenly;
+        align-items: start;
+        gap: 40px;
+    }
+
+    .center {
+
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        width: 190px;
+        gap: 10px;
+    }
+
+    .right {
+
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        width: 150px;
+        gap: 10px;
+    }
+
+    .main-right {
+        height: 607px;
+        width: 300px;
+        background: gainsboro;
+    }
+
+    .main-right h3 {
+        color: gray;
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    .main-right select {
+        margin-left: 10px;
+        padding: 3px;
+    }
+
+    .m-name h5 {
+        color: gray;
+        padding: 15px;
+
+    }
+
+    .m-name h4 {
+        padding-left: 15px;
+        font-size: larger;
+    }
+
+    .m-price h5 {
+        color: gray;
+        padding: 15px;
+    }
+
+    .m-price h4 {
+        padding-left: 15px;
+        font-size: larger;
+    }
+
+    .m-date h5 {
+        color: gray;
+        padding: 15px;
+    }
+
+    .m-date h4 {
+        padding-left: 15px;
+        font-size: larger;
+    }
+
+    hr {
+        margin: 5px;
+    }
+
+    .seat-sel h4 {
+        color: gray;
+        padding: 15px;
+    }
+
+    .selected .up {
+        background-color: greenyellow;
+    }
+
+    .selected .down {
+        background-color: greenyellow;
+    }
+
+    #showselectedseats {
+        display: flex;
+        justify-self: space-evenly;
+        align-items: start;
+        gap: 10px;
+        width: 200px;
+        min-height: 50px;
+        height: auto;
+        background: yellow;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    #amount {
+        width: 200px;
+        height: 50px;
+        background: yellow;
+        padding: 5px;
+    }
+
+    .preoccupied .up {
+        background: rgb(201, 197, 197);
+    }
+
+    .preoccupied .down {
+        background: rgb(201, 197, 197);
+    }
+
+    .occupied .up {
+        background: rgb(201, 197, 197);
+    }
+
+    .occupied .down {
+        background: rgb(201, 197, 197);
+    }
+
+    .btn {
+        padding: 5px 10px;
+        border: none;
+        width: 80%;
+        font-size: 20px;
+        border-radius: 5px;
+        background: grey;
+        color: white;
+        display: block;
+        margin: 10px auto;
+    }
